@@ -1,2 +1,12 @@
 @import 'base/normilize';
 @import 'blocks/header';
+@import 'base/variables';
+@import 'blocks/buttons';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    padding: 0;
+}

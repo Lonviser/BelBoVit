@@ -1,46 +1,103 @@
+@import '../base/variables';
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: #912105;
+	background-color: lightcyan;
+    height: 102px;
+	display: flex;
+    align-items: center;
+	&__logo{
+		z-index: 11;
+	}
 }
 .header__container {
-	max-width: 1200px;
 	margin: 0px auto;
 	display: flex;
-	padding: 0px 30px;
+	padding: 0px 3.47vw;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 70px;
+	max-width: 1440px;
 }
-.header__logo {
-	border-radius: 50%;
-	background-color: #fff;
-	position: relative;
-	z-index: 5;
-	width: 40px;
-	height: 40px;
+
+.menu{
+	&__contact{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__body{
+		display: flex;
+		flex-direction: column;
+		padding-left: 4vw;
+		grid-gap: 1vw;
+	}
 }
-.header__menu {
+.menu_place{
+	display: flex;
+	align-items: center;
+	column-gap: 1.39vw;
+	span{
+		color: #454545;
+		font-size: 1.11vw;
+		line-height: 1.39vw;
+	}
 }
-.menu {
+.menu_email{
+	display: flex;
+	align-items: center;
+	column-gap: 1.39vw;
+	span{
+		color: #454545;
+		font-size: 1.11vw;
+		line-height: 1.39vw;
+	}
+}
+.menu_number{
+	display: flex;
+	align-items: center;
+	column-gap: 1.39vw;
+	a{
+		color: #454545;
+		font-size: 1.11vw;
+		line-height: 1.39vw;
+		text-decoration: none;
+	}
+}
+.menu_second_number{
+	display: flex;
+	align-items: center;
+	column-gap: 1.39vw;
+	a{
+		color: #454545;
+		font-size: 1.11vw;
+		line-height: 1.39vw;
+		text-decoration: none;
+	}
 }
 .menu__icon {
 	display: none;
 }
-.menu__body {
+
+.menu__list >li:first-child{
+	margin: 0;
 }
-.menu__list {
+.menu__list >li:last-child{
+	margin-left: 7.43vw;
 }
 .menu__list > li {
 	position: relative;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 4.86vw;
 }
 .menu__link {
-	color: #fff;
+	color: #454545;;
 	font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 1.53vw;
 }
 .menu__link:hover {
 	text-decoration: underline;
@@ -104,13 +161,53 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /* ----------------------- */
+@media (min-width: 1441px){
+	.menu__body{
+		grid-gap: 26px;
+		padding-left: 70px;
+	}
+	.menu__list>li{
+		margin: 0 0 0 70px;
+	}
+	.menu__list>li:last-child{
+		margin-left: 107px;
+	}
+	.menu_place{
+		span{
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.menu_email{
+		span{
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.menu_number{
+		a{
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.menu_second_number{
+		a{
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.menu__link{
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
 @media (min-width: 767px) {
 	.menu__list {
 		display: flex;
-		align-items: center;
-	}
-	.menu__list > li {
-		padding: 10px 0;
+		align-items: flex-end;
+        list-style-type: none; 
+		margin: 0;
+
 	}
 	.menu__sub-list {
 		transform: translate(0px, 10%);
@@ -119,8 +216,34 @@ body._touch .menu__list > li._active .menu__arrow {
 		pointer-events: none;
 		transition: all 0.3s ease 0s;
 	}
+	
+}
+@media (max-width: 1260px){
+	.menu__list{
+		justify-content: space-between;
+	}
+	.menu__list>li{
+		margin: 0;
+	}
+	.header__container{
+		width: 100%;
+	}
+	.header__menu.menu {
+		width: 100%;
+	}
+	
 }
 @media (max-width: 767px) {
+
+	.header{
+		height: auto;
+		&__container{
+			width: 100%;
+		}
+	}
+	.header__menu.menu {
+		width: auto;
+	}
 	.menu__icon {
 		z-index: 5;
 		display: block;
@@ -169,7 +292,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	.menu__body {
 		position: fixed;
 		top: 0;
-		left: -100%;
+		left: -120%;
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.9);
@@ -188,7 +311,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		top: 0;
 		left: 0;
 		height: 70px;
-		background-color: #912105;
+		background-color: $main-color;
 		z-index: 2;
 	}
 
@@ -204,6 +327,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 	.menu__link {
 		font-size: 24px;
+        color: #454545;
 	}
 	.menu__sub-list {
 		position: relative;
