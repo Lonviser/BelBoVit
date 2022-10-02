@@ -85,6 +85,7 @@ if (menuLinks.length > 0) {
 
 //слайдер
       var swiper = new Swiper(".mySwiper", {
+		loop: true,
 		lazy: true,
         pagination: {
           el: ".swiper-pagination",

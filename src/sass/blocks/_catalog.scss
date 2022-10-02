@@ -1,0 +1,131 @@
+.catalog{
+    padding-bottom: 50px;
+    &__title{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        color: $second-color;
+        text-align: center;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap:20px;
+    }
+    &__card{
+        width: 100%;
+        height: 200px;
+        background: #fff;
+        cursor:pointer;
+    }
+}
+.card1{
+    background: #fff;
+    background-size: cover;
+    background:url('../../imgs/catalog1.svg') center  no-repeat;
+}
+.card1:hover{
+    background:url('../../imgs/catalog1_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+.card2{
+    background:url('../../imgs/catalog2.svg') center  no-repeat;
+}
+.card2:hover{
+    background:url('../../imgs/catalog2_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+.card3{
+    background:url('../../imgs/catalog3.svg') center  no-repeat;
+}
+.card3:hover{
+    background:url('../../imgs/catalog3_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card4{
+    background:url('../../imgs/catalog4.svg') center  no-repeat;
+}
+.card4:hover{
+    background:url('../../imgs/catalog4_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card5{
+    background:url('../../imgs/catalog5.svg') center  no-repeat;
+}
+.card5:hover{
+    background:url('../../imgs/catalog5_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card6{
+    background:url('../../imgs/catalog6.svg') center  no-repeat;
+}
+.card6:hover{
+    background:url('../../imgs/catalog6_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card7{
+    background:url('../../imgs/catalog7.svg') center  no-repeat;
+}
+.card7:hover{
+    background:url('../../imgs/catalog7_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+
+.card8{
+    background:url('../../imgs/catalog8.svg') center  no-repeat;
+}
+.card8:hover{
+    background:url('../../imgs/catalog8_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card9{
+    background:url('../../imgs/catalog9.svg') center  no-repeat;
+}
+.card9:hover{
+    background:url('../../imgs/catalog9_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+.card10{
+    background:url('../../imgs/catalog10.svg') center  no-repeat;
+}
+.card10:hover{
+    background:url('../../imgs/catalog10_h.svg') center  no-repeat;
+    transition: 0.5s all;
+}
+
+
+@media (max-width:1200px){
+    .catalog{
+        &__cards{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+@media (max-width:1024px){
+    .catalog{
+        &__cards{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media (max-width:768px){
+    .catalog{
+        &__cards{
+            grid-template-columns: 1fr 1fr 1fr ;
+        }
+    }
+}
+@media (max-width:540px){
+    .catalog{
+        &__cards{
+            grid-template-columns: 1fr ;
+        }
+    }
+}

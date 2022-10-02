@@ -1,0 +1,39 @@
+.reasons{
+    background: #454545;
+    min-height: 441px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 61px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__blocks{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap:20px;
+        grid-gap: 20px;
+        justify-content: space-around;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        max-width: 252px;
+    }
+    &__number{
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 61px;
+        color: #FF7D04;
+        margin-bottom: 23px;
+    }
+    &__info{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}

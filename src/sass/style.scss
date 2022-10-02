@@ -3,7 +3,10 @@
 @import 'base/variables';
 @import 'blocks/buttons';
 @import 'blocks/main-silder';
-@import 'blocks/catalog'
+@import 'blocks/catalog';
+@import 'blocks/reasons';
+@import 'blocks/basic-info';
+@import 'blocks/furniture';
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +16,9 @@ ul{
     padding: 0;
 }
 
+body{
+    background: #EFEFEF;
+}
 .container{
     max-width: 1440px;
     margin: 0 auto;
