@@ -37,3 +37,11 @@
         color: #FFFFFF;
     }
 }
+
+@media (max-width:540px){
+    .reasons{
+        &__block{
+            max-width: 100%;
+        }
+    }
+}
