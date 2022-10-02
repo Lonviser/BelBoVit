@@ -1,5 +1,5 @@
 "use strict"
-
+// cкрипт для шапки 
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -82,3 +82,12 @@ if (menuLinks.length > 0) {
 		}
 	}
 }
+
+//слайдер
+      var swiper = new Swiper(".mySwiper", {
+		lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+		  clickable: true,
+        },
+      });

@@ -2,6 +2,8 @@
 @import 'blocks/header';
 @import 'base/variables';
 @import 'blocks/buttons';
+@import 'blocks/main-silder';
+@import 'blocks/catalog'
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -9,4 +11,10 @@
 
 ul{
     padding: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 3.47vw;
 }

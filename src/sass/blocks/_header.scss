@@ -1,12 +1,12 @@
 @import '../base/variables';
 .header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: lightcyan;
     height: 102px;
+	background:#fff;
 	display: flex;
     align-items: center;
 	&__logo{
@@ -99,6 +99,10 @@
     font-size: 1.25vw;
     line-height: 1.53vw;
 }
+.active{
+	color:#FF7D04;
+	font-weight: 700;
+}
 .menu__link:hover {
 	text-decoration: underline;
 }
@@ -161,9 +165,9 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /* ----------------------- */
-@media (min-width: 1441px){
+@media (min-width: 1500px){
 	.menu__body{
-		grid-gap: 26px;
+		grid-gap: 17px;
 		padding-left: 70px;
 	}
 	.menu__list>li{
@@ -235,6 +239,18 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 767px) {
 
+	.menu__link{
+		list-style: none;
+	}
+	.menu__contact{
+		display: none;
+	}
+	.menu__list>li:last-child{
+		margin-left: 0;
+	}
+	.button__menu{
+		display: none;
+	}
 	.header{
 		height: auto;
 		&__container{
@@ -243,6 +259,9 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 	.header__menu.menu {
 		width: auto;
+	}
+	.menu__list>li:first-child{
+		margin: 0 0 30px 0;
 	}
 	.menu__icon {
 		z-index: 5;
@@ -260,7 +279,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		height: 10%;
 		width: 100%;
 		transition: all 0.3s ease 0s;
-		background-color: #fff;
+		background-color: $main-color;
 	}
 	.menu__icon::before,
 	.menu__icon::after {
@@ -311,7 +330,6 @@ body._touch .menu__list > li._active .menu__arrow {
 		top: 0;
 		left: 0;
 		height: 70px;
-		background-color: $main-color;
 		z-index: 2;
 	}
 
