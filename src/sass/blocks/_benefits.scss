@@ -1,0 +1,23 @@
+.benefits{
+    min-height: 560px;
+    &__title{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        color:$second-color;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 40px;
+    }
+    &__block{
+        min-height: 274px;
+    }
+    &__blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.benefits1{
+    background: url('../../imgs/benefits1.png');
+}
