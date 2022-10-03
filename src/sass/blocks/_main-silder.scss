@@ -1,6 +1,6 @@
 
 .swiper{
-    min-height: 432px;
+    height: 432px;
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 0 !important;
@@ -8,6 +8,7 @@
 .swiper-pagination-bullet-active {
     background: $main-color !important; 
   }
+
 .swiper-slide {
     position: relative;
     text-align: center;
@@ -70,6 +71,9 @@
   }
 
   @media(max-width:768px){
+    .swiper{
+      height: 700px;
+    }
     .slide-title{
         font-size: 25px;
         line-height: 28px;

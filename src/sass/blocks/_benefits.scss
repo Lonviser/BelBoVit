@@ -1,5 +1,6 @@
 .benefits{
     min-height: 560px;
+    padding-bottom: 50px;
     &__title{
         font-weight: 400;
         font-size: 40px;
@@ -11,13 +12,65 @@
     }
     &__block{
         min-height: 274px;
+        position: relative;
     }
     &__blocks{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    &__txt{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        color:#FFFFFF;
+        width: 300px;
+        position: absolute;
+        bottom: 10px;
+        left: 55px;
+        &-right{
+        text-align: right;
+        bottom: 10px;
+        right: 40px;
+        left: auto;
+        }
     }
 }
 
 .benefits1{
-    background: url('../../imgs/benefits1.png');
+    background: url('../../imgs/benefits1.png') center  no-repeat;
+}
+.benefits2{
+    background: url('../../imgs/benefits2.png') center  no-repeat;
+}
+.benefits3{
+    background: url('../../imgs/benefits3.png') center  no-repeat;
+}
+.benefits4{
+    background: url('../../imgs/benefits4.png') center  no-repeat;
+}
+
+@media( max-width:1023px){
+    .benefits{
+        &__blocks{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media(max-width:400px){
+    .benefits{
+        &__title{
+            font-size: 32px;
+        }
+        &_txt{
+            left: 15px;
+            width: 200px;
+            &_right{
+                left: 0 !important;
+                right: 15px;
+            }
+        }
+    }
+    
 }

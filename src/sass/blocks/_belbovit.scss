@@ -1,0 +1,36 @@
+.belbovit{
+    font-weight: 400;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 61px;
+    color: #454545;
+    &__title{
+        font-size: 50px;
+        line-height: 61px;
+        font-weight: 400;
+        color: #454545;
+        text-align: center;
+    }
+    &__blocks{
+        display: flex;
+        column-gap:60px;
+    }
+    &__block{
+        width: 50%;
+        img{
+            height: 100%;
+            width: 48.53vw;
+            max-width: 100%;
+        }
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+.first-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

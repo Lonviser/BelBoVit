@@ -9,6 +9,8 @@
 @import 'blocks/furniture';
 @import 'blocks/news';
 @import 'blocks/benefits';
+@import 'blocks/belbovit';
+@import 'blocks/footer';
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +21,7 @@ ul{
 }
 
 body{
-    background: #EFEFEF;
+    background:  #E1E1E1;
 }
 .container{
     max-width: 1440px;
